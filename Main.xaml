@@ -1,0 +1,312 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:uast="clr-namespace:UiPath.Activities.System.Text;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.PDF</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.PDF</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="632.6666666666666,3162" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:IEnumerable(x:String)" Name="allExtractedText">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">ExtractText_2</x:String>
+            <x:String x:Key="SourcePropertyName">Results</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="firstExtractedText">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">ExtractText_2</x:String>
+            <x:String x:Key="SourcePropertyName">Result</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="620,3139.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_8">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="EmailList" />
+        <Variable x:TypeArguments="x:String" Name="ExtractedText" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:GetOutlookMailMessages Filter="{x:Null}" FilterByMessageIds="{x:Null}" TimeoutMS="{x:Null}" Account="shafii.12108743@lpu.in" DisplayName="Get Outlook Mail Messages" GetAttachements="False" sap:VirtualizedContainerService.HintSize="586,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_4" MailFolder="Inbox" MarkAsRead="True" Messages="[EmailList]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Top="30" />
+      <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each currentMailMessage" sap:VirtualizedContainerService.HintSize="586,945.3333333333334" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[EmailList]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="snm:MailMessage">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="snm:MailMessage" Name="currentMailMessage" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,797.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If Condition="[currentMailMessage.Subject.ToLower.Contains(&quot;invoice&quot;)]" sap:VirtualizedContainerService.HintSize="518,737.3333333333334" sap2010:WorkflowViewState.IdRef="If_3">
+                <If.Then>
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484,484" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If Condition="[currentMailMessage.Attachments.Any(Function(a) a.Name.EndsWith(&quot;.pdf&quot;))]" sap:VirtualizedContainerService.HintSize="450,424" sap2010:WorkflowViewState.IdRef="If_4">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,170.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:SaveMailAttachments Attachments="{x:Null}" DisplayName="Save Attachments" ExcludeInlineAttachments="False" FolderPath="C:\Users\USER\Documents\UiPath\Saved Invoice Attachments" sap:VirtualizedContainerService.HintSize="382,110.66666666666667" sap2010:WorkflowViewState.IdRef="SaveMailAttachments_2" Message="[currentMailMessage]" OverwriteExisting="False" />
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+      </ui:ForEach>
+      <If sap2010:Annotation.AnnotationText="Check the Project Folder for Invoice Files" Condition="[Directory.GetFiles( &quot;C:\Users\USER\Documents\UiPath\Saved Invoice Attachments&quot;, &quot;*.pdf&quot;).Any()]" sap:VirtualizedContainerService.HintSize="586,938.6666666666666" sap2010:WorkflowViewState.IdRef="If_5">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <If.Then>
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="552,561.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_14">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Invoice Entry" sap:VirtualizedContainerService.HintSize="518,501.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="f881fef7-464d-44a6-9ce7-1a91632504a0" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence sap:VirtualizedContainerService.HintSize="484,181.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,118.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-11, -11, 1942, 1030" FilePath="C:\Program Files (x86)\Microsoft Office\root\Office16\onenote.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAUuSURBVGhD7ZpbbFRVFIaraAwEjdJ22gq2SqmJ8a0PBiUmRgho5AE7YowShGmLyMVLq9Vqiy1CoraFBrWFmXGqztAy9EZb6ZVe6bTAg1HbWm8hCtZr1JAoRl+We+191pzTM5vhHOh2IGElX1poMvP9O/9eJ73EXZnLcK5iXM2YFSPwvdHB/hzP+bnkRM4vcClwLPunUk3L8sySvVAsYU7XCDVrM1v2IrEkFAqlaG6WZq7sRWKJ3+9P1dwszSUXwOfzpWluluZKgJnGdgC2RsEOsjedSWwHGFz3LVhhiDG8/hTb1T8qDcID7Mz4qGRHRhtwFrXB64taBemtsJ1Y2AKlnENQcpvgtVuRZtiGpDVDcVoTFKcKilIboeiWRvDeO8yCnMaHjlTgYuEBdHFNXireEiHO5Zn4NhTX5IsQJv4qsqARXlnQAO2Pj0Fo/fdwXEEIHiAszogmLuQ1cdOpc3Ht1EmcM78BAg+O8FqNsjrJJC4GLYBBPF0Xt1sX46mjeOH8eii8uR5qlg9A79qvYcT1g+X70PTQhCV4gGinblucQeIvcw6CZ9kR6FnzJYRcU4oCSMSRmseOQn/lJPTvnoTa3GPSnvfu+pzjWT0YPnUhXg8vpRzkuJd1Q/eaSRaA3QMVAczidOooTvP3mX+h4p7OiJ7THKmYCJ86iRekBKEgOQj7lnapDWAWp7r0GQLgnBz9NaLnNBgA6yLEhfyLyQc4ygOY1yJVxRwAJ5A9ovecQdNTPhE+dRJ/gVMHe5d2qg4QeUmx532s2zS/n/6Lf8Qqld5xKNxzmp7ycV4XXb4O8pPqIC+pVn0Aszj1HC8njd81on0GMOz5KlwXmm4WwCiez8RR/vmk/eoDoLiQn74WjQHwgk50TGn/AqhkmwXrQtNdPqbJ6+LIc44AVKsOIHv8I3gxabAub9x1GM6yCuFMjf/BT5ymq2yMi+cZxJFnHX4WoENxAJM47XNjALqgrcUfa/8D0GL4vLPsMyGepIsjzzg+vKAAb2f2W4IHMIvTPsfNQmPcLnj6OGfP/MM/4mAAs/jWROSD/yGASZwuKG4WGnFBxSWtYELm6Sj7NEJ8S+L7sJlRdb/iAChPaxHFqS64WWiMaxF7Puj+QvuKGAwg5HXxzYk1sCmhhgVoVxvALE77HDcLjXG7YM8LM4Lw26k/ta8CtL/1CRMneSG+KcEHTye8pz6AEDc/Reug6uFevl3ogtJ2oZ7vWdXFxZHKVZ0R4hsZT8V74V3VAaaL08NInLhxLcouKNVFF/dx8Y0JXi6/Id7DAhxWG8B46nrP9bqQPIqfq+cobjx1FEdy493qA5D49Kdo5D4X4vKey8Rz5iH74B3VAWSP/3PXRS5O8iieq4lnz9sLrpuqwbtS8Rpl8iUkHq0uxp4LeV18A4rzUxfiJF9wpxcOOIdsf0tJW/F88AA2Zm7e3TsgOjshn1Gw5E3Yfl81uFe2QfOjJ6Bv7Te2vqmXycqwHWDX8gBEZUUAdq/YD3seCIKHyQcfGYaOJ8ZhaN13/Kd0MlkZMlkZtgPUZg3A+RmEoPMoNLGTR/mBJ0+y07deH0QmK8N2ALyMVsDOY23w5FHe7o8WZbIybAfATWKNKd75C/3hrkxWhu0AKGMHmZwVZLIybAeQvZkKZLIyLvsAmZmZyZqbpZnTsHq0SvaGM41M1owrscLNnG4UatbmOka6w+FY7HQ6l2RlZcUEfG90YC63M2ajmNXBv0+4noG/m10YY9DhBgb+3YStwRD46/1rYww6MJe4uP8ATfy6HSYk28YAAAAASUVORK5CYII=" InformativeScreenshot="bc9491c3f2cfc405f5c53d741080145d.png" Selector="&lt;wnd app='onenote.exe' cls='Framework::CFrame' title='INT-348 - OneNote' /&gt;" Title="INT-348 - OneNote" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,174.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_15">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382,114.66666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="No invoice files found in the project folder" />
+          </Sequence>
+        </If.Else>
+      </If>
+      <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="C:\Users\USER\Documents\UiPath\Saved Invoice Attachments\Sample Invoice 1.pdf" sap:VirtualizedContainerService.HintSize="586,116" sap2010:WorkflowViewState.IdRef="ReadPDFText_4" Range="All" Text="[ExtractedText]" />
+      <uast:ExtractText EndingText="{x:Null}" FirstMatch="{x:Null}" DisplayName="Extract Text" ExtractBaseURLOnly="False" ExtractOptions="BetweenStrings" sap:VirtualizedContainerService.HintSize="586,333.3333333333333" sap2010:WorkflowViewState.IdRef="ExtractText_2" IgnoreDuplicates="False" MatchCase="False" Result="[firstExtractedText]" Results="[allExtractedText]" Source="[ExtractedText]" StartingText="Invoice Date:" />
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: INT-348 - OneNote" sap:VirtualizedContainerService.HintSize="586,666" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" ScopeGuid="7720462d-beee-4526-bd5a-7c95b9dc4fd4" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,346" sap2010:WorkflowViewState.IdRef="Sequence_22">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Content block 1 of 1'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,286" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="7720462d-beee-4526-bd5a-7c95b9dc4fd4" Text="[ExtractedText]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="672, 352, 196, 53" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;wnd aaname='OneNote Page' cls='OneNote::DocumentCanvas' /&gt;&lt;ctrl name='OneNote Page' role='pane' /&gt;&lt;ctrl name='Content block 1 of 1' role='document' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='OneNote Page' cls='OneNote::DocumentCanvas' /&gt;&lt;ctrl name='OneNote Page' role='pane' /&gt;&lt;ctrl name='Content block 1 of 1' role='document' automationid='' check:text='Content block 1 of 1' /&gt;" Guid="19d80aef-1d74-47f2-93f3-f801b07d0882" InformativeScreenshot="b63f37026ae8259c32bd0702de2165ac.png" ScopeSelectorArgument="&lt;wnd app='onenote.exe' cls='Framework::CFrame' title='INT-348 - OneNote' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-11, -11, 1942, 1030" FilePath="C:\Program Files (x86)\Microsoft Office\root\Office16\onenote.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAUuSURBVGhD7ZpbbFRVFIaraAwEjdJ22gq2SqmJ8a0PBiUmRgho5AE7YowShGmLyMVLq9Vqiy1CoraFBrWFmXGqztAy9EZb6ZVe6bTAg1HbWm8hCtZr1JAoRl+We+191pzTM5vhHOh2IGElX1poMvP9O/9eJ73EXZnLcK5iXM2YFSPwvdHB/hzP+bnkRM4vcClwLPunUk3L8sySvVAsYU7XCDVrM1v2IrEkFAqlaG6WZq7sRWKJ3+9P1dwszSUXwOfzpWluluZKgJnGdgC2RsEOsjedSWwHGFz3LVhhiDG8/hTb1T8qDcID7Mz4qGRHRhtwFrXB64taBemtsJ1Y2AKlnENQcpvgtVuRZtiGpDVDcVoTFKcKilIboeiWRvDeO8yCnMaHjlTgYuEBdHFNXireEiHO5Zn4NhTX5IsQJv4qsqARXlnQAO2Pj0Fo/fdwXEEIHiAszogmLuQ1cdOpc3Ht1EmcM78BAg+O8FqNsjrJJC4GLYBBPF0Xt1sX46mjeOH8eii8uR5qlg9A79qvYcT1g+X70PTQhCV4gGinblucQeIvcw6CZ9kR6FnzJYRcU4oCSMSRmseOQn/lJPTvnoTa3GPSnvfu+pzjWT0YPnUhXg8vpRzkuJd1Q/eaSRaA3QMVAczidOooTvP3mX+h4p7OiJ7THKmYCJ86iRekBKEgOQj7lnapDWAWp7r0GQLgnBz9NaLnNBgA6yLEhfyLyQc4ygOY1yJVxRwAJ5A9ovecQdNTPhE+dRJ/gVMHe5d2qg4QeUmx532s2zS/n/6Lf8Qqld5xKNxzmp7ycV4XXb4O8pPqIC+pVn0Aszj1HC8njd81on0GMOz5KlwXmm4WwCiez8RR/vmk/eoDoLiQn74WjQHwgk50TGn/AqhkmwXrQtNdPqbJ6+LIc44AVKsOIHv8I3gxabAub9x1GM6yCuFMjf/BT5ymq2yMi+cZxJFnHX4WoENxAJM47XNjALqgrcUfa/8D0GL4vLPsMyGepIsjzzg+vKAAb2f2W4IHMIvTPsfNQmPcLnj6OGfP/MM/4mAAs/jWROSD/yGASZwuKG4WGnFBxSWtYELm6Sj7NEJ8S+L7sJlRdb/iAChPaxHFqS64WWiMaxF7Puj+QvuKGAwg5HXxzYk1sCmhhgVoVxvALE77HDcLjXG7YM8LM4Lw26k/ta8CtL/1CRMneSG+KcEHTye8pz6AEDc/Reug6uFevl3ogtJ2oZ7vWdXFxZHKVZ0R4hsZT8V74V3VAaaL08NInLhxLcouKNVFF/dx8Y0JXi6/Id7DAhxWG8B46nrP9bqQPIqfq+cobjx1FEdy493qA5D49Kdo5D4X4vKey8Rz5iH74B3VAWSP/3PXRS5O8iieq4lnz9sLrpuqwbtS8Rpl8iUkHq0uxp4LeV18A4rzUxfiJF9wpxcOOIdsf0tJW/F88AA2Zm7e3TsgOjshn1Gw5E3Yfl81uFe2QfOjJ6Bv7Te2vqmXycqwHWDX8gBEZUUAdq/YD3seCIKHyQcfGYaOJ8ZhaN13/Kd0MlkZMlkZtgPUZg3A+RmEoPMoNLGTR/mBJ0+y07deH0QmK8N2ALyMVsDOY23w5FHe7o8WZbIybAfATWKNKd75C/3hrkxWhu0AKGMHmZwVZLIybAeQvZkKZLIyLvsAmZmZyZqbpZnTsHq0SvaGM41M1owrscLNnG4UatbmOka6w+FY7HQ6l2RlZcUEfG90YC63M2ajmNXBv0+4noG/m10YY9DhBgb+3YStwRD46/1rYww6MJe4uP8ATfy6HSYk28YAAAAASUVORK5CYII=" InformativeScreenshot="3e521661eef6dfd6655055662914c46d.png" Selector="&lt;wnd app='onenote.exe' cls='Framework::CFrame' title='INT-348 - OneNote' /&gt;" Title="INT-348 - OneNote" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
