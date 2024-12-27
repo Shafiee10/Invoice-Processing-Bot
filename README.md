@@ -20,7 +20,7 @@ Follow these steps to download, configure, and run the project on your local mac
  Download Main File:
  You can directly download the Main.xml file from this repository.
 
-### **3. Configuring the Project
+### **3. Configuring the Project**
 1. Open UiPath Studio and go to the "Open a Local Project" option.
 2. Navigate to the folder where the Main.xml file is located and select it.
 3. Editing File Paths:
