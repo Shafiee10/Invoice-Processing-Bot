@@ -30,4 +30,4 @@ Follow these steps to download, configure, and run the project on your local mac
  - Email Attachment Path: Path where email attachments are stored.
  - OneNote Application Path: Update this if the OneNote installation directory differs.
 - Ensure the paths are accessible and have the required permissions.
-- Run the project.
+- Run the project in UiPath Studio.
